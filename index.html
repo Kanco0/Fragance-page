@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Atelier — Fragrance Compare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wordmark">
+    <span class="wordmark-main">The Atelier</span>
+    <span class="wordmark-sub">Fragrance Dossier</span>
+  </div>
+  <p class="header-tagline">Select two or more scents to draw a side-by-side dossier.</p>
+</header>
+
+<main class="catalogue" id="catalogue">
+</main>
+
+<div class="compare-bar" id="compareBar">
+  <div class="compare-bar-inner">
+    <span class="compare-count"><span id="compareCount">0</span> selected</span>
+    <div class="compare-chips" id="compareChips"></div>
+    <button class="btn-compare" id="compareBtn">Compare</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close dossier">&times;</button>
+    <div class="modal-header">
+      <span class="eyebrow">Comparative Dossier</span>
+      <h2 id="modalTitle">Side by Side</h2>
+    </div>
+    <div class="dossier-wrap">
+      <table class="dossier" id="dossierTable">
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Crafted for the discerning nose &mdash; compare before you commit.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
